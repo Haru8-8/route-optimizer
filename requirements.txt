@@ -1,0 +1,7 @@
+folium==0.20.0
+matplotlib==3.10.8
+numpy==2.4.3
+ortools==9.15.6755
+pandas==3.0.1
+streamlit==1.55.0
+streamlit_folium==0.27.0
