@@ -177,8 +177,8 @@ streamlit run app.py
 
 | 分類 | 技術 |
 |---|---|
-| 最適化（厳密解） | OR-Tools (Google) |
-| 最適化（近似解） | スクラッチ実装（貪欲法・2-opt・SA・Clarke-Wright・Nearest Neighbor） |
+| 最適化 | OR-Tools (Google) |
+| 最適化（スクラッチ実装） | 貪欲法・2-opt・SA・Clarke-Wright・Nearest Neighbor |
 | 距離計算 | Haversine公式（緯度経度 → 球面距離・将来的に道路距離へ差し替え可能） |
 | フレームワーク | Streamlit |
 | 地図描画 | Folium + streamlit-folium |
