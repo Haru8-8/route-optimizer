@@ -78,7 +78,7 @@ def solve_tsp_ortools(
             index = solution.Value(routing.NextVar(index))
 
         total_dist = solution.ObjectiveValue() / scale
-        status = "Optimal" if routing.status() == 1 else "Feasible"
+        status = "Feasible" if routing.status() in (1,2) else "No solution"
     else:
         # 解なし（地点数が少なければほぼ起きない）
         route = list(range(n))

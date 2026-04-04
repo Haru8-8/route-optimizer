@@ -195,7 +195,7 @@ def solve_vrptw_ortools(
         vehicle_load.append(load)
 
     total_dist = sum(vehicle_dist)
-    status = "Optimal" if routing.status() == 1 else "Feasible"
+    status = "Feasible" if routing.status() in (1,2) else "No solution"
 
     return {
         "routes": routes,
